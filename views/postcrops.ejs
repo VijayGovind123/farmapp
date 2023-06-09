@@ -10,7 +10,7 @@
 
 <% for(let i=0;i<images.length;i++){ %>
     <%   for(let j=0;j<images[i].products.length;j++){ %>
-    <%    if(images[i].products[j].isExists===false){ %>
+    <%    if(images[i].products[j].isExists===true){ %>
            <div class="product">
              <div class="image" style="background:url('data:image/<%=images[i].products[j].image.contentType%>;base64,<%=images[i].products[j].image.data.toString('base64')%>');background-position:center;background-size:cover;">
 
