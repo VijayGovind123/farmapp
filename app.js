@@ -308,8 +308,9 @@ app.get("/delete/:i/:j/",function(req,res){
  // var j = (req.params.j);
   Farmer.updateOne(
     { 'username': req.user.username },
-    { $set: { [`products.${req.params.j}.isExists`]: 'false' } },
-    (err, result) => {
+    { $set: { [`products.${req.params.j}.isExists`]: 'false' } }
+    
+  ).then((err, result) => {
       if (err) {
         // Handle error
         console.log("Error");
@@ -317,8 +318,7 @@ app.get("/delete/:i/:j/",function(req,res){
         // Handle success
         console.log("Success")
       }
-    }
-  );
+    });
   res.redirect("/postcrops");
   
 })
