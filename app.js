@@ -300,7 +300,7 @@ app.get("/delete/:i/:j/",function(req,res){
  // var j = (req.params.j);
   Farmer.updateOne(
     { 'username': req.user.username },
-    { $set: { products[req.params.j].isExists:false} },
+    { $set: { [`products.${req.params.j}.isExists`]: 'false' } },
     (err, result) => {
       if (err) {
         // Handle error
