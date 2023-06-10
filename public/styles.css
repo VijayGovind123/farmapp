@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Chivo&family=IBM+Plex+Sans&family=Outfit&family=Plus+Jakarta+Sans&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&family=Chivo&family=IBM+Plex+Sans&family=Outfit&family=Manrope&family=Plus+Jakarta+Sans&family=Work+Sans&display=swap');
 
 @font-face {
   font-family: apple;
@@ -10,7 +10,7 @@ a{
 }
 body{
   color: black;
-  font-family: 'Plus Jakarta sans', sans-serif;
+  font-family: 'manrope', sans-serif;
   background-image:url(pexels.jpg);
   background-repeat: no-repeat;
   background-position: center;
